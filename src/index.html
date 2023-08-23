@@ -38,9 +38,6 @@
                   <a href="#certificate" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Certificate</a>
                 </li>
                 <li class="group">
-                  <a href="#mini-games" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Mini Games</a>
-                </li>
-                <li class="group">
                   <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
                 </li>
               </ul>
@@ -137,59 +134,567 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="pt-28 pb-16 bg-slate-100">
+    <section id="portfolio" class="pt-28 pb-28 bg-slate-100">
       <div class="container">
         <div class="w-full p-4">
-          <div class="max-w-xl mx-auto text-center mb-10">
+          <div class="max-w-xl mx-auto text-center">
             <h4 class="font-semibold uppercase text-xl text-primary mb-2">Portfolio</h4>
             <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">My Project</h2>
-            <p class="font-medium text-md text-secondary md:text-lg">This is an example of some websites I have created</p>
+            <p class="font-medium text-md text-secondary md:text-lg">This is an example of some projects I have created</p>
           </div>
         </div>
+      </div>
 
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/dist/img/portfolio/bcp.png" alt="Profil Perusahaan" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Company Profile</h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sequi explicabo temporibus.</p>
+      <div class="container mx-auto">
+        <div class="mb-4">
+          <ul class="flex flex-wrap justify-center -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+            <li class="mr-2" role="presentation">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Project</button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
+                Mini Project
+              </button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
+                UI Design
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div id="myTabContent">
+          <!-- project start -->
+          <div class="hidden p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <h3 class="text-3xl font-bold text-center">.:. Soon .:.</h3>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/dist/img/portfolio/teater-bahtera.png" alt="Ekstrakulikuler Teater Bahtera" width="w-full" />
+          <!-- project end -->
+
+          <!-- mini project start -->
+          <div class="hidden p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/color-picker/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-color-picker.png" alt="Color Picker Project" />
+                </a>
+                <div class="p-5">
+                  <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Color Picker</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Generate dan menghasilkan warna rgb sesuai yang Anda inginkan.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/color-picker/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/find-my-face/find-my-face.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-find-my-face.png" alt="Find My Face Project" />
+                </a>
+                <div class="p-5">
+                  <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Find My Face</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Generate dan menghasilkan warna rgb sesuai yang Anda inginkan.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/find-my-face/find-my-face.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/forbidden-main/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-forbidden-web.png" alt="Forbidden Web Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/forbidden-main/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Forbidden Web</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Website perusahaan yang bergerak di bidang IT Solution.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/forbidden-main/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/info-movie/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-info-movie.png" alt="Info Movie Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/info-movie/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Info Movie</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Mencari informasi mengenai detail film yang Anda inginkan.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/info-movie/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/ipem-merch/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-ipem-merch.png" alt="IPEM Merch Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/ipem-merch/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">IPEM Merch</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Website penjualan merchendise Insan Pembangunan.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/ipem-merch/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/kasir-mini/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-kasir-mini.png" alt="Kasir Mini Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/kasir-mini/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Kasir Mini</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Aplikasi kasir sangat sederhana yang berjalan di web browser.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/kasir-mini/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/lato-lato/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-lato-lato.png" alt="Lato-Lato Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/lato-lato/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Lato-Lato</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Mainan tradisional yang terdiri dari sepasang bola yang terikat tali.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/lato-lato/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/layout/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-layout.png" alt="Layout Web Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/layout/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Layout Web</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Tampilan template layout default website.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/layout/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/model-viewer/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-model-viewer.png" alt="3D Object Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/model-viewer/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">3D Object</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Menampilkan gambar 3D yang dapat bergerak.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/model-viewer/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/my-links/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-my-links.png" alt="My Links Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/my-links/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">My Links</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Web link untuk tautan biodata di media sosial.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/my-links/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/parallax-simple/parallax.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-parallax-simple.png" alt="Simple Parallax Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/parallax-simple/parallax.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Simple Parallax</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Tampilan website dengan parallax sederhana.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/parallax-simple/parallax.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/password-generator/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-password-generator.png" alt="Password Generator Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/password-generator/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Password Generator</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Membuat password random yang panjang karakternya bisa di sesuaikan.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/password-generator/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/saklar-lampu/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-saklar-lampu.png" alt="Saklar Lampu Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/saklar-lampu/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Saklar Lampu</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Tombol Saklar on/off pada lampu bohlam kuning.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/saklar-lampu/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/scaleup-font/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-scaleup-font.png" alt="Scale Up Font Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/scaleup-font/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Scale Up Font</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Membuat font menjadi besar dan naik ke atas saat di hover.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/scaleup-font/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/show-quote/index.html  ">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-color-picker.png" alt="Show Quote Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/show-quote/index.html  ">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Show Quote</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Generate dan menghasilkan warna rgb sesuai yang Anda inginkan.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/show-quote/index.html "
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/simple-image-gallery/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-simple-image-gallery.png" alt="Simple Image Gallery Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/simple-image-gallery/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Simple Image Gallery</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Galeri foto sederhana.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/simple-image-gallery/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/suit-jawa/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-suwit-jawa.png" alt="Suwit Jawa Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/suit-jawa/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Suwit Jawa</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Suwit jawa melawan AI komputer.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/suit-jawa/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/tebak-angka/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-color-picker.png" alt="Tebak Angka Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/tebak-angka/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">Tebak Angka</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Permainan tebak angka yang di pikirkan AI.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/tebak-angka/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg">
+                <a href="https://raflisalamudin.github.io/mini-project/the-sunday-bite-restaurant/index.html">
+                  <img class="rounded-t-lg p-3 pb-0 rounded" src="/dist/img/portfolio/banner-the-sunday-bite-restaurant.png" alt="The Sunday Bite Restaurant Project" />
+                </a>
+                <div class="p-5">
+                  <a href="https://raflisalamudin.github.io/mini-project/the-sunday-bite-restaurant/index.html">
+                    <h5 class="mb-2 text-2xl font-bold text-dark">The Sunday Bite Restaurant</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-secondary">Website perusahaan yang bergerak di bidang makanan.</p>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <a
+                        href="https://raflisalamudin.github.io/mini-project/the-sunday-bite-restaurant/index.html"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >Demo</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/raflisalamudin/mini-project"
+                        class="w-full inline-flex justify-center px-3 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                        >View Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Ekstrakulikuler Teater Bahtera</h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sequi explicabo temporibus.</p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/dist/img/portfolio/sekolah.png" alt="Profil Sekolah" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">School Profile</h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sequi explicabo temporibus.</p>
+          <!-- mini project end -->
+
+          <!-- ui design start -->
+          <div class="hidden p-4 rounded-lg" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <h3 class="text-3xl font-bold text-center">.:. Soon .:.</h3>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/dist/img/portfolio/ipem-merch.png" alt="E-Commerce" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">E-Commerce</h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sequi explicabo temporibus.</p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/dist/img/portfolio/katalog.png" alt="Katalog" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Catalog</h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sequi explicabo temporibus.</p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="/dist/img/portfolio/profile.png" alt="Landing Page" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Landing Page</h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sequi explicabo temporibus.</p>
-          </div>
+          <!-- ui design end -->
         </div>
       </div>
     </section>
@@ -223,41 +728,6 @@
     </section>
     <!-- Certificate Gallery Section End -->
 
-    <!-- Mini Games Section Start -->
-    <section id="mini-games" class="pt-28 pb-16 bg-slate-100">
-      <div class="container">
-        <div class="w-full p-4">
-          <div class="max-w-xl mx-auto text-center mb-10">
-            <h4 class="font-semibold uppercase text-xl text-primary mb-2">Mini Games</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">My Simple Game</h2>
-            <p class="font-medium text-md text-secondary md:text-lg">Very simple game and have fun</p>
-          </div>
-        </div>
-
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/2">
-            <a href="/src/minigames/lato-lato/index.html">
-              <div class="rounded-md shadow-md overflow-hidden">
-                <img src="#" alt="Game Lato-Lato" width="w-full" />
-              </div>
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Lato-Lato</h3>
-            </a>
-            <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sequi explicabo temporibus.</p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <a href="/src/minigames/find-my-face/find-my-face.html">
-              <div class="rounded-md shadow-md overflow-hidden">
-                <img src="#" alt="Game Find My Face" width="w-full" />
-              </div>
-              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Find My Face</h3>
-            </a>
-            <p class="font-medium text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sequi explicabo temporibus.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Mini Games Section End -->
-
     <!-- Contact Section Start -->
     <section id="contact" class="pt-28 pb-28">
       <div class="container">
@@ -265,26 +735,26 @@
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold uppercase text-xl text-primary mb-2">Contact</h4>
             <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Me</h2>
-            <p class="font-medium text-md text-secondary md:text-lg">The message you entered here did not reach me</p>
+            <!-- <p class="font-medium text-md text-secondary md:text-lg">The message you entered here did not reach me</p> -->
           </div>
         </div>
 
-        <form>
+        <form name="">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <div class="w-full px-4 mb-8">
               <label for="name" class="text-base text-primary font-bold">Name</label>
-              <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+              <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" name="nama" />
             </div>
             <div class="w-full px-4 mb-8">
               <label for="email" class="text-base text-primary font-bold">Email</label>
-              <input type="text" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+              <input type="text" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" name="email" />
             </div>
             <div class="w-full px-4 mb-8">
               <label for="pesan" class="text-base text-primary font-bold">Message</label>
-              <textarea type="text" id="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+              <textarea type="text" id="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" name="pesan"></textarea>
             </div>
             <div class="w-full px-4">
-              <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
+              <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
             </div>
           </div>
         </form>
@@ -305,13 +775,7 @@
             <p>Kabupaten Tangerang, Banten</p>
             <p>Indonesia</p>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Mini Games</h3>
-            <ul class="text-slate-300">
-              <li><a href="/src/minigames/lato-lato/index.html" class="inline-block text-base hover:text-primary">Lato-Lato</a></li>
-              <li><a href="/src/minigames/find-my-face/find-my-face.html" class="inline-block text-base hover:text-primary">Find My Face</a></li>
-            </ul>
-          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3"></div>
           <div class="w-full px-4 mb-12 md:w-1/3">
             <h3 class="font-semibold text-xl text-white mb-5">Links</h3>
             <ul class="text-slate-300">
@@ -319,7 +783,6 @@
               <li><a href="#about" class="inline-block text-base hover:text-primary">About Me</a></li>
               <li><a href="#portfolio" class="inline-block text-base hover:text-primary">Portfolio</a></li>
               <li><a href="#certificate" class="inline-block text-base hover:text-primary">Certificate</a></li>
-              <li><a href="#mini-games" class="inline-block text-base hover:text-primary">Mini Games</a></li>
               <li><a href="#contact" class="inline-block text-base hover:text-primary">Contact</a></li>
             </ul>
           </div>
@@ -382,5 +845,7 @@
     <!-- Footer End -->
 
     <script src="/dist/js/script.js"></script>
+    <!-- flowbite -->
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
