@@ -1,17 +1,17 @@
 // hero
 document.addEventListener("DOMContentLoaded", function () {
   new TypeIt(".type", {
-    strings: ["Web Developer"],
+    strings: ["Frontend Developer"],
     speed: 250,
     loop: true,
   })
     .pause(1000)
-    .delete(13)
+    .delete(18)
     .type("Network Administrator")
     .go();
 });
 
-// portfolio
+// portfolio image
 var modal = document.getElementById("modal-image");
 var images = document.querySelectorAll(".card-img-top");
 images.forEach(function (image) {
@@ -35,4 +35,9 @@ window.addEventListener("load", function () {
       document.getElementById("my-form").reset();
     });
   });
+});
+
+// AOS
+AOS.init({
+  duration: 1000,
 });
